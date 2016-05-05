@@ -75,19 +75,19 @@ request({
 			jsonString.push(jsonDato09);
 			var jsonArrayValor = JSON.parse(JSON.stringify(jsonString));
 			//console.log(jsonArrayValor);
-				
+			var aDocs = jsonArrayValor;
+			for (var n = 0; n < aDocs.length; n++){
+				var docToAdd = new Database(aDocs[n]);
+				docToAdd.save(function(error,docToAdd){
+					if (error) return console.error(error)
+				});
+			}	
 	}
 });
 /*base datos*/
 var Database = require("./models/santander").Database;
 
-var aDocs = request.jsonArrayValor;
-for (var n = 0; n < aDocs.length; n++){
-	var docToAdd = new Database(aDocs[n]);
-	docToAdd.save(function(error,docToAdd){
-		if (error) return console.error(error)
-	});
-}
+
 
 app.listen(7070);
 console.log("Servidor conectado puerto 7070");
