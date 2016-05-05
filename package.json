@@ -1,0 +1,29 @@
+{
+  "name": "nodejscharts",
+  "version": "1.0.0",
+  "description": "app de chart",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiju84/NodeJSMongoCharts.git"
+  },
+  "author": "javiju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiju84/NodeJSMongoCharts/issues"
+  },
+  "homepage": "https://github.com/javiju84/NodeJSMongoCharts#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "json": "^9.0.3",
+    "mongoose": "^4.4.14",
+    "nodemon": "^1.9.2",
+    "request": "^2.72.0",
+    "url": "^0.11.0",
+    "zingchart": "^2.3.2"
+  }
+}
